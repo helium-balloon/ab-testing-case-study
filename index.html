@@ -235,13 +235,13 @@
               A, 12 users misclicked and 12 users did not misclick. In sample B,
               0 users misclicked and 22 users did not misclick. <br /><br />
 
-              Because the p-value is less than 0.05, the difference between versions A and B
-              with respect to misclick rate is significant. We can come to the
-              same conclusion through using the chi square statistic as well,
-              which is 14.88. Using the degree of freedom, we can find the
-              critical value of chi^2 to be 3.841, which is less than the chi^2
-              value, so the magnitude of difference between the two groups is
-              significant. <br /><br />
+              Because the p-value is less than 0.05, the difference between
+              versions A and B with respect to misclick rate is significant. We
+              can come to the same conclusion through using the chi square
+              statistic as well, which is 14.88. Using the degree of freedom, we
+              can find the critical value of chi^2 to be 3.841, which is less
+              than the chi^2 value, so the magnitude of difference between the
+              two groups is significant. <br /><br />
 
               Because the p-value is significant and the chi-square statistic is
               significant, we find statistically significant evidence that the
@@ -317,6 +317,22 @@
                   <td>p-value</td>
                   <td>0.0000000004</td>
                 </tr>
+                <tr>
+                  <td>Avg(A)</td>
+                  <td>36138.5</td>
+                </tr>
+                <tr>
+                  <td>Variance(A)</td>
+                  <td>212313712.7</td>
+                </tr>
+                <tr>
+                  <td>Avg(B)</td>
+                  <td>7374.045</td>
+                </tr>
+                <tr>
+                  <td>Variance(B)</td>
+                  <td>3805972.3</td>
+                </tr>
               </table>
             </div>
           </div>
@@ -344,7 +360,7 @@
               <br />
               <br />
 
-              Because the p-value is significant we find statistically
+              Because the p-value is significant, we find statistically
               significant evidence that the alternative hypothesis is true.
             </p>
             <div class="center">
@@ -364,6 +380,22 @@
                   <td>p-value</td>
                   <td>0.00021</td>
                 </tr>
+                <tr>
+                  <td>Avg(A)</td>
+                  <td>8.833</td>
+                </tr>
+                <tr>
+                  <td>Variance(A)</td>
+                  <td>62.405</td>
+                </tr>
+                <tr>
+                  <td>Avg(B)</td>
+                  <td>2.18</td>
+                </tr>
+                <tr>
+                  <td>Variance(B)</td>
+                  <td>0.251</td>
+                </tr>
               </table>
             </div>
           </div>
@@ -372,6 +404,34 @@
 
       <div>
         <h2>Summary Statistics</h2>
+        <p>
+          There is a lot that can be learned about the differences in
+          performance for version A and version B simply through looking at the
+          summary statistics including variance and mean.
+          <br /><br />
+
+          Most significantly in the data is the average and variance for each of
+          these versions in relation to the number of clicks used to complete
+          the task. In version A, the average number of clicks to complete the
+          task is 8.83 clicks and the variance is 62.40. This reveals that there
+          is a large difference in the number of clicks it takes to complete the
+          task in version A. In comparison, for version B, the average number of
+          clicks to complete the task is 2.18 and the variance is 0.25. This
+          reveals that there is a very small amount of change in the number of
+          clicks taken to complete the task in version B across users.
+          <br /><br />
+
+          Using these averages and variances, we can conclude that the number of
+          clicks to complete the task is much higher in version A than version
+          B, indicating that version B is more efficient for the user. Secondly,
+          using variance, we can conclude that the amount of clicks to complete
+          the task differs a lot for users in version A but not in version B.
+          This indicates that version B is easier to follow and more efficient.
+          The variability and number of clicks can also speak to the rate of
+          misclicks, as found earlier, version A had more misclicks, so it makes
+          logical sense that the overall amount of clicks would be greater for
+          version A as well.
+        </p>
       </div>
 
       <div>
@@ -379,16 +439,18 @@
         <p>
           Through these three metrics, it is likely that version B is better
           than version A. We see that on average people spend less time
-          completing the task, less misclicks, and less clicks overall using
-          version B. I believe that this difference is due to the changes in the
-          interface in version B, where the two types of options that can be
-          taken “See Appointment” and “Schedule Appointment” are visually much
-          different. In addition, the location of the appointment is made
-          clearer. Doing a two-tailed t-test would tell me if they are
-          significantly different, but in this case where I want to see if
-          version B is an improvement, it is important to me to understand if
-          version B is smaller than version A. The results from the test are
-          indicated in the table to the right.
+          completing the task, have less misclicks, and have less clicks overall
+          using version B. This allows users to complete this task faster and
+          easier. I believe that this difference is due to the changes in the
+          interface in version B, where the two options, “See Appointment” and
+          “Schedule Appointment”, are visually different by being different
+          colors and having a greater contrast between background and text color
+          to be read more easily. In addition, the location of the appointment
+          is made clearer through bolding the location. <br /><br />
+
+          With the help of A/B Testing and statistical analysis, I was able to
+          confidently determine that the changes in B offered significant
+          positive changes to the user experience.
         </p>
       </div>
     </main>
