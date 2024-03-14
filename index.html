@@ -17,12 +17,30 @@
   <body>
     <header>
       <h1>A/B Testing Case Study</h1>
-      <p>Text about overall project :) a little blurb</p>
+      <p>
+        In this project, my main goal was to determine whether one user
+        interface design is more effective than another in improving the
+        usability for the user. To address this question, I explored A/B
+        testing, where I compared two version of the user interface and compared
+        which performed better through the testing of my peers. By measuring key
+        metrics, I am able to statistically figure out which interface is more
+        successful for the user's needs. Read on to learn about my process and
+        my results!
+      </p>
     </header>
     <main>
       <div>
-        <h2>A/B Studio</h2>
-        <p>Text about the studio part of the project</p>
+        <h2>A/B Testing Studio</h2>
+        <p>
+          To begin, my peers and I first used the Version A website to schedule
+          an appointment without seeing the interface ahead of time. Then, after
+          using the interface, I made small changes to the interface, including
+          changing the color of the buttons to make them more readable and
+          clear, and changing the boldness of the location of the appointment to
+          reduce confusion. After making these changes, I tested my website for
+          speed and accuracy by having others use it to complete the same task
+          of scheduling an appointment.
+        </p>
         <div class="half">
           <div class="center">
             <h3>Version A (Original)</h3>
@@ -37,6 +55,10 @@
 
       <div>
         <h2>Hypotheses</h2>
+        <p>
+          Using the data collected during the A/B Testing studio, I made
+          hypotheses based on what I believe I will find after testing the data.
+        </p>
         <div>
           <h3>Metrics</h3>
           <ul class="list">
@@ -76,7 +98,7 @@
                 </li>
                 <li>
                   <i>Alternative Hypothesis -</i> The misclick rate from sample
-                  A is greater than the misclick rate from sample B.
+                  A is different than the misclick rate from sample B.
                 </li>
                 <li>
                   <i>Justification - </i>I made this alternative hypothesis
@@ -84,7 +106,8 @@
                   it was a confusing interface so more people were more likely
                   to misclick. However, in version B, the interface was more
                   clear and understandable, so it is likely that there was a
-                  smaller misclick rate.
+                  smaller misclick rate, so the misclick rate will likely
+                  differ.
                 </li>
               </ul>
             </li>
@@ -124,13 +147,12 @@
                 <li>
                   <i>Justification -</i> I made this alternative hypothesis
                   because in version A, people are more likely to make mistakes
-                  and end up clicking multiple things, especially wrong things,
-                  which will increase the number of clicks. On the other hand,
-                  in version B, people will be more likely to find what they are
-                  looking for and click a smaller amount of times to get there
-                  because the interface is more intuitive and easier to
-                  understand through making the buttons and hospital locations
-                  more readable.
+                  and end up clicking multiple things, which will increase the
+                  number of clicks. On the other hand, in version B, people will
+                  be more likely to find what they are looking for and click a
+                  smaller amount of times to get there because the interface is
+                  more intuitive through making the buttons and hospital
+                  locations more readable.
                 </li>
               </ul>
             </li>
@@ -199,6 +221,10 @@
 
       <div>
         <h2>Statistical Tests</h2>
+        <p>
+          After creating my hypotheses, I ran statistical tests on the metrics
+          explained above to learn the impact of my A/B testing.
+        </p>
         <div>
           <h3>Misclick Rate</h3>
           <div class="half">
@@ -207,19 +233,15 @@
               misclick can be represented as a boolean value which can be split
               into two categories: did misclick and did not misclick. In sample
               A, 12 users misclicked and 12 users did not misclick. In sample B,
-              0 users misclicked and 22 users did not misclick. As seen in the
-              table, the degrees of freedom for this metric is 1, the chi^2
-              value is 14.88, and the p-value is 0.0001. <br /><br />
+              0 users misclicked and 22 users did not misclick. <br /><br />
 
-              Because the p-value<=0.05, we find that the difference between
-              versions A and B with respect to misclick rate is significant. We
-              can come to the same conclusion through using the chi square
-              statistic as well, which is 14.88. We know that we have 1 degree
-              of freedom, so using the critical value of the chi-square
-              distribution where alpha=0.05, the chi-square critical value is
-              3.841. Because the chi^2 statistic, 14.88, is greater than the
-              critical value, 3.841, the magnitude of difference between the two
-              groups is significant. <br /><br />
+              Because the p-value is less than 0.05, the difference between versions A and B
+              with respect to misclick rate is significant. We can come to the
+              same conclusion through using the chi square statistic as well,
+              which is 14.88. Using the degree of freedom, we can find the
+              critical value of chi^2 to be 3.841, which is less than the chi^2
+              value, so the magnitude of difference between the two groups is
+              significant. <br /><br />
 
               Because the p-value is significant and the chi-square statistic is
               significant, we find statistically significant evidence that the
@@ -236,11 +258,11 @@
                 </tr>
                 <tr>
                   <td>chi^2</td>
-                  <td>14.8823529411765</td>
+                  <td>14.88</td>
                 </tr>
                 <tr>
                   <td>p-value</td>
-                  <td>0.000114428456331361</td>
+                  <td>0.00011</td>
                 </tr>
               </table>
             </div>
@@ -248,15 +270,126 @@
         </div>
         <div>
           <h3>Time on Page</h3>
+          <div class="half">
+            <p>
+              I chose to run a one-tailed t-test for the time on page because
+              this piece of information is a number, not a category, and I
+              believe that the most important information can be gleaned from
+              understanding if the version B time on page is smaller than
+              version A. Doing a two-tailed t-test would tell me only if they
+              are significantly different, but in this case I want to see if
+              version B is an improvement. <br /><br />
+
+              Using this test, the outputs are noted in the table. These results
+              show that the degrees of freedom for this metric is approximately
+              24. This means that there are 24 pieces of information to estimate
+              the variability in the data which impacts the critical values of
+              the t-distribution, and the higher degrees of freedom, the closer
+              the t-distribution resembles the normal distribution. Next, the
+              t-score is 9.578, and the p-value when A is less than B is
+              0.99999. Because my alternative hypothesis states that A>B, and
+              these outputs are for when A is less than B, I will do 1-p to get
+              my p-value of approximately 0.00000. <br /><br />
+
+              Because the p-value for this metric is less than or equal to the
+              chosen significan level, 0.05, the amount that A is larger than B
+              is significant for the time spend on the page. Furthermore, using
+              the t-value and the degrees of freedom, I can confirm this
+              p-value. <br /><br />
+
+              Because the p-value is significant, I have found statistically
+              significant evidence that the alternative hypothesis is true.
+            </p>
+            <div class="center">
+              <table>
+                <tr>
+                  <th>Outputs</th>
+                </tr>
+                <tr>
+                  <td>df</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>t-value</td>
+                  <td>9.578</td>
+                </tr>
+                <tr>
+                  <td>p-value</td>
+                  <td>0.0000000004</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
         <div>
           <h3>Number of Clicks</h3>
-          <p>asdl;fkj</p>
+          <div class="half">
+            <p>
+              I chose to run a one-tailed test for the number of clicks on a
+              page because this statistic is a number, not a category, and I
+              believe that important information can be taken away from this
+              metric through understanding if the number of clicks in version B
+              is smaller than the number of clicks in version A. The degrees of
+              freedom for this metric is approximately 23, the T-score is 4.12,
+              and the p-value is 0.9997. Similar to time on page, this data
+              represents when A is less than B. Similar to time on page, this
+              data represents A is smaller than B, so I inverted the data to
+              analyze for my alternative hypothesis which is A is greater than
+              B. In this case, the p-value equals 0.00021. <br /><br />
+
+              Because the p-value is less than or equal to 0.05, we find that
+              the amount that A is larger than B is significant for the number
+              of clicks used to complete the task. Furthermore, using the
+              t-value and the degrees of freedom, I can confirm this p-value.
+              <br />
+              <br />
+
+              Because the p-value is significant we find statistically
+              significant evidence that the alternative hypothesis is true.
+            </p>
+            <div class="center">
+              <table>
+                <tr>
+                  <th>Outputs</th>
+                </tr>
+                <tr>
+                  <td>df</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>t-value</td>
+                  <td>4.11588</td>
+                </tr>
+                <tr>
+                  <td>p-value</td>
+                  <td>0.00021</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
       <div>
         <h2>Summary Statistics</h2>
+      </div>
+
+      <div>
+        <h2>Conclusions</h2>
+        <p>
+          Through these three metrics, it is likely that version B is better
+          than version A. We see that on average people spend less time
+          completing the task, less misclicks, and less clicks overall using
+          version B. I believe that this difference is due to the changes in the
+          interface in version B, where the two types of options that can be
+          taken “See Appointment” and “Schedule Appointment” are visually much
+          different. In addition, the location of the appointment is made
+          clearer. Doing a two-tailed t-test would tell me if they are
+          significantly different, but in this case where I want to see if
+          version B is an improvement, it is important to me to understand if
+          version B is smaller than version A. The results from the test are
+          indicated in the table to the right.
+        </p>
       </div>
     </main>
   </body>
