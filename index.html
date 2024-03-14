@@ -21,11 +21,10 @@
         In this project, my main goal was to determine whether one user
         interface design is more effective than another in improving the
         usability for the user. To address this question, I explored A/B
-        testing, where I compared two version of the user interface and compared
-        which performed better through the testing of my peers. By measuring key
-        metrics, I am able to statistically figure out which interface is more
-        successful for the user's needs. Read on to learn about my process and
-        my results!
+        testing, where I compared two versions of a user interface and compared
+        which performed better through the testing. By measuring key metrics, I
+        am able to statistically figure out which interface is more successful
+        for the user's needs. Read on to learn about my process and my results!
       </p>
     </header>
     <main>
@@ -35,11 +34,12 @@
           To begin, my peers and I first used the Version A website to schedule
           an appointment without seeing the interface ahead of time. Then, after
           using the interface, I made small changes to the interface, including
-          changing the color of the buttons to make them more readable and
-          clear, and changing the boldness of the location of the appointment to
-          reduce confusion. After making these changes, I tested my website for
-          speed and accuracy by having others use it to complete the same task
-          of scheduling an appointment.
+          changing the color of the buttons to make them more readable have more
+          contrast between button color and text color, and changing the
+          boldness of the location of the appointment to reduce confusion. After
+          making these changes, I tested my website for speed and accuracy by
+          having others use it to complete the same task of scheduling an
+          appointment.
         </p>
         <div class="half">
           <div class="center">
@@ -223,7 +223,8 @@
         <h2>Statistical Tests</h2>
         <p>
           After creating my hypotheses, I ran statistical tests on the metrics
-          explained above to learn the impact of my A/B testing.
+          explained above to learn the impact of my A/B testing. For each test,
+          the significance level used is &alpha;=0.05.
         </p>
         <div>
           <h3>Misclick Rate</h3>
@@ -237,11 +238,13 @@
 
               Because the p-value is less than 0.05, the difference between
               versions A and B with respect to misclick rate is significant. We
-              can come to the same conclusion through using the chi square
+              can come to the same conclusion through using the chi squared
               statistic as well, which is 14.88. Using the degree of freedom, we
-              can find the critical value of chi^2 to be 3.841, which is less
-              than the chi^2 value, so the magnitude of difference between the
-              two groups is significant. <br /><br />
+              can find the critical value of chi squared to be 3.841, which is
+              less than the chi squared value, so the magnitude of difference
+              between the two groups is significant. In addition, we can use the
+              chi squared value and the degrees of freedom to confirm the
+              p-value.<br /><br />
 
               Because the p-value is significant and the chi-square statistic is
               significant, we find statistically significant evidence that the
@@ -286,16 +289,16 @@
               the variability in the data which impacts the critical values of
               the t-distribution, and the higher degrees of freedom, the closer
               the t-distribution resembles the normal distribution. Next, the
-              t-score is 9.578, and the p-value when A is less than B is
-              0.99999. Because my alternative hypothesis states that A>B, and
-              these outputs are for when A is less than B, I will do 1-p to get
-              my p-value of approximately 0.00000. <br /><br />
+              t-score is 9.578, and the p-value when A &lt; B is 0.99999.
+              Because my alternative hypothesis states that A &gt; B, and these
+              outputs are for when A &lt; B, I will do 1-p to get my p-value of
+              approximately 0.00000. <br /><br />
 
-              Because the p-value for this metric is less than or equal to the
-              chosen significan level, 0.05, the amount that A is larger than B
-              is significant for the time spend on the page. Furthermore, using
-              the t-value and the degrees of freedom, I can confirm this
-              p-value. <br /><br />
+              Because the p-value for this metric is &lt;= 0.05, the amount that
+              A is larger than B is significant for the time spend on the page.
+              Furthermore, using the t-value and the degrees of freedom, I can
+              confirm this p-value.
+              <br /><br />
 
               Because the p-value is significant, I have found statistically
               significant evidence that the alternative hypothesis is true.
@@ -348,15 +351,14 @@
               is smaller than the number of clicks in version A. The degrees of
               freedom for this metric is approximately 23, the T-score is 4.12,
               and the p-value is 0.9997. Similar to time on page, this data
-              represents when A is less than B. Similar to time on page, this
-              data represents A is smaller than B, so I inverted the data to
-              analyze for my alternative hypothesis which is A is greater than
-              B. In this case, the p-value equals 0.00021. <br /><br />
+              represents when A &lt; B, so I inverted the data to analyze for my
+              alternative hypothesis which is A &gt; B. In this case, the
+              p-value = 0.00021. <br /><br />
 
-              Because the p-value is less than or equal to 0.05, we find that
-              the amount that A is larger than B is significant for the number
-              of clicks used to complete the task. Furthermore, using the
-              t-value and the degrees of freedom, I can confirm this p-value.
+              Because the p-value &lt;= to 0.05, we find that the amount that A
+              is larger than B is significant for the number of clicks used to
+              complete the task. Furthermore, using the t-value and the degrees
+              of freedom, I can confirm this p-value.
               <br />
               <br />
 
