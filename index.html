@@ -229,30 +229,33 @@
         <div>
           <h3>Misclick Rate</h3>
           <div class="half">
-            <p>
-              For the misclick rate, I chose to run a chi squared test because
-              misclick can be represented as a boolean value which can be split
-              into two categories: did misclick and did not misclick. In sample
-              A, 12 users misclicked and 12 users did not misclick. In sample B,
-              0 users misclicked and 22 users did not misclick. <br /><br />
+            <div class="most">
+              <p>
+                For the misclick rate, I chose to run a chi squared test because
+                misclick can be represented as a boolean value which can be
+                split into two categories: did misclick and did not misclick. In
+                sample A, 12 users misclicked and 12 users did not misclick. In
+                sample B, 0 users misclicked and 22 users did not misclick.
+                <br /><br />
 
-              Because the p-value is less than 0.05, as noted in the table, the
-              difference between versions A and B with respect to misclick rate
-              is significant. We can come to the same conclusion through using
-              the chi squared statistic as well, which is 14.88. Using the
-              degree of freedom which is 1, we can find the chi squared critical
-              value is 3.841, which is less than the chi squared value, so the
-              magnitude of difference between the two groups is significant. In
-              addition, we can use the chi squared value and the degrees of
-              freedom to confirm the p-value.<br /><br />
+                Because the p-value is less than 0.05, as noted in the table,
+                the difference between versions A and B with respect to misclick
+                rate is significant. We can come to the same conclusion through
+                using the chi squared statistic as well, which is 14.88. Using
+                the degree of freedom which is 1, we can find the chi squared
+                critical value is 3.841, which is less than the chi squared
+                value, so the magnitude of difference between the two groups is
+                significant. In addition, we can use the chi squared value and
+                the degrees of freedom to confirm the p-value.<br /><br />
 
-              <b
-                >Because the p-value is significant and the chi-square statistic
-                is significant, we find statistically significant evidence that
-                the alternative hypothesis is true.</b
-              >
-            </p>
-            <div class="center">
+                <b
+                  >Because the p-value is significant and the chi-square
+                  statistic is significant, we find statistically significant
+                  evidence that the alternative hypothesis is true.</b
+                >
+              </p>
+            </div>
+            <div class="test">
               <table>
                 <tr>
                   <th>Outputs</th>
@@ -276,37 +279,41 @@
         <div>
           <h3>Time on Page</h3>
           <div class="half">
-            <p>
-              I chose to run a one-tailed t-test for the time on page because
-              this piece of information is a number, not a category, and I
-              believe that the most important information can be gleaned from
-              understanding if the version B time on page is smaller than
-              version A. Doing a two-tailed t-test would tell me only if they
-              are significantly different, but in this case I want to see if
-              version B is faster. <br /><br />
+            <div class="most">
+              <p>
+                I chose to run a one-tailed t-test for the time on page because
+                this piece of information is a number, not a category, and I
+                believe that the most important information can be gleaned from
+                understanding if the version B time on page is smaller than
+                version A. Doing a two-tailed t-test would tell me only if they
+                are significantly different, but in this case I want to see if
+                version B is faster. <br /><br />
 
-              Using this test, the outputs are noted in the table. These results
-              show that the degrees of freedom for this metric is approximately
-              24. This means that there are 24 pieces of information to estimate
-              the variability in the data which impacts the critical values of
-              the t-distribution, and the higher degrees of freedom, the closer
-              the t-distribution resembles the normal distribution. Next, the
-              t-score is 9.578, and the p-value when A &lt; B is 0.99999.
-              Because my alternative hypothesis states that A &gt; B, and these
-              outputs are for when A &lt; B, I will do 1-p to get my p-value of
-              approximately 0.0000000004. <br /><br />
+                Using this test, the outputs are noted in the table. These
+                results show that the degrees of freedom for this metric is
+                approximately 24. This means that there are 24 pieces of
+                information to estimate the variability in the data which
+                impacts the critical values of the t-distribution, and the
+                higher degrees of freedom, the closer the t-distribution
+                resembles the normal distribution. Next, the t-score is 9.578,
+                and the p-value when A &lt; B is 0.99999. Because my alternative
+                hypothesis states that A &gt; B, and these outputs are for when
+                A &lt; B, I will do 1-p to get my p-value of approximately
+                0.0000000004. <br /><br />
 
-              Because the p-value for this metric is &lt;= 0.05, the amount that
-              A is larger than B is significant for the time spend on the page.
-              Furthermore, using the t-value and the degrees of freedom, I can
-              confirm this p-value.
-              <br /><br />
+                Because the p-value for this metric is &lt;= 0.05, the amount
+                that A is larger than B is significant for the time spend on the
+                page. Furthermore, using the t-value and the degrees of freedom,
+                I can confirm this p-value.
+                <br /><br />
 
-              <b
-                >Because the p-value is significant, I have found statistically
-                significant evidence that the alternative hypothesis is true.</b
-              >
-            </p>
+                <b
+                  >Because the p-value is significant, I have found
+                  statistically significant evidence that the alternative
+                  hypothesis is true.</b
+                >
+              </p>
+            </div>
             <div class="center">
               <table>
                 <tr>
@@ -347,30 +354,34 @@
         <div>
           <h3>Number of Clicks</h3>
           <div class="half">
-            <p>
-              I chose to run a one-tailed test for the number of clicks on a
-              page because this statistic is a number, not a category, and I
-              believe that important information can be taken away from this
-              metric through understanding if the number of clicks in version B
-              is smaller than the number of clicks in version A. The degrees of
-              freedom for this metric is approximately 23, the T-score is 4.12,
-              and the p-value is 0.9997. Because my alternative hypothesis
-              states that A &gt; B, and these outputs are for when A &lt; B, I
-              will do 1-p to get my p-value of approximately 0.00021 for my
-              hypothesis.<br /><br />
+            <div class="most">
+              <p>
+                I chose to run a one-tailed test for the number of clicks on a
+                page because this statistic is a number, not a category, and I
+                believe that important information can be taken away from this
+                metric through understanding if the number of clicks in version
+                B is smaller than the number of clicks in version A. The degrees
+                of freedom for this metric is approximately 23, the T-score is
+                4.12, and the p-value is 0.9997. Because my alternative
+                hypothesis states that A &gt; B, and these outputs are for when
+                A &lt; B, I will do 1-p to get my p-value of approximately
+                0.00021 for my hypothesis.<br /><br />
 
-              Because the p-value &lt;=0.05, we find that the amount that A is
-              larger than B is significant for the number of clicks used to
-              complete the task. Furthermore, using the t-value and the degrees
-              of freedom, I can confirm this p-value.
-              <br />
-              <br />
+                Because the p-value &lt;=0.05, we find that the amount that A is
+                larger than B is significant for the number of clicks used to
+                complete the task. Furthermore, using the t-value and the
+                degrees of freedom, I can confirm this p-value.
+                <br />
+                <br />
 
-              <b
-                >Because the p-value is significant, we find statistically
-                significant evidence that the alternative hypothesis is true.</b
-              >
-            </p>
+                <b
+                  >Because the p-value is significant, we find statistically
+                  significant evidence that the alternative hypothesis is
+                  true.</b
+                >
+              </p>
+            </div>
+
             <div class="center">
               <table>
                 <tr>

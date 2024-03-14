@@ -68,7 +68,13 @@ table {
     border-collapse: collapse;
     margin: 10px;
     margin-left: 20px;
+    align-self: center;
+    width: 80%
 }
-.fill_half {
-    width: 50%;
+.most {
+    width: 75%;
+}
+.test {
+  display: flex;
+  justify-content: center;
 }
